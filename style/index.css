@@ -114,3 +114,95 @@
         width: 90%;
     }
 }
+
+/* --- SEÇÃO DE SERVIÇOS --- */
+.secao-servicos {
+    width: 100%;
+    padding: 60px 20px;
+    background-color: var(--cor-fundo); /* Fundo claro para contrastar com os cards */
+    box-sizing: border-box;
+}
+
+.cabecalho-servicos {
+    text-align: center;
+    max-width: 900px;
+    margin: 0 auto 40px auto;
+}
+
+.cabecalho-servicos h2 {
+    font-family: 'Trebuchet MS', sans-serif;
+    font-size: 28px;
+    color: #1e293b;
+    margin-bottom: 15px;
+    font-weight: 700;
+}
+
+.cabecalho-servicos p {
+    font-family: 'Georgia', serif;
+    font-size: 16px;
+    color: var(--cor-texto);
+    line-height: 1.5;
+}
+
+/* --- GRID DE CARDS RESPONSIVO --- */
+.grid-servicos {
+    display: grid;
+    grid-template-columns: 1fr; /* Mobile First: 1 coluna */
+    gap: 24px;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+/* --- CARD INDIVIDUAL --- */
+.card-servico {
+    background-color: #ffffff;
+    border-radius: 20px;
+    padding: 30px 20px;
+    text-align: center;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+    transition: transform 0.5s ease, box-shadow 0.5s ease;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.card-servico:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.5);
+}
+
+.icon-card {
+    width: 48px;
+    height: 48px;
+    margin-bottom: 16px;
+}
+
+.card-servico h3 {
+    font-family: 'Trebuchet MS', sans-serif;
+    font-size: 20px;
+    color: #0f172a;
+    margin: 0 0 8px 0;
+    font-weight: 700;
+}
+
+.card-servico p {
+    font-family: 'Trebuchet MS', sans-serif;
+    font-size: 14px;
+    color: #64748b;
+    margin: 0;
+    line-height: 1.4;
+}
+
+/* --- MEDIA QUERIES (TABLET E DESKTOP) --- */
+@media (min-width: 600px) {
+    .grid-servicos {
+        grid-template-columns: repeat(2, 1fr); /* 2 colunas em telas médias */
+    }
+}
+
+@media (min-width: 992px) {
+    .grid-servicos {
+        grid-template-columns: repeat(3, 1fr); /* 3 colunas em telas grandes */
+    }
+}
