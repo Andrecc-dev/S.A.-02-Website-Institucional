@@ -3,169 +3,150 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ViralWave | Agencia de negócios</title>
+    <title>ViralWavel | Página incial</title>
     <link rel="stylesheet" href="../style/global.css">
-    <link rel="stylesheet" href="../style/index.css">
 </head>
 <body>
-<header class="cabecalho">
-    <!-- Bloco 1: Logo -->
-    <div class="logo-box">
-        <img src="../images/ViralWave-letraBranca.svg" alt="Logo ViralWave" class="logo-img">
-        <span class="logo-texto">ViralWave</span>
-    </div>
+    
+    <header class="header-principal">
+        <div class="nav-container">
+            <!-- Lado Esquerdo: Logo + Marca + Slogan -->
+            <div class="marca-container">
+                <img src="../images/ViralWave (1).svg" alt="Logo ViralWave" class="logo-img">
+                <div class="titulos-marca">
+                    <h1>ViralWave</h1>
+                    <h2>Levando o seu negócio ao mundo</h2>
+                </div>
+            </div>
 
-    <!-- Bloco 2: Navegação Central -->
-    <nav class="menu-navegacao">
-        <ul>
-            <li><a href="index.html" class="link-menu ativo">Principal</a></li>
-            <li><a href="sobre.html" class="link-menu">Sobre</a></li>
-            <li><a href="servicos.html" class="link-menu">Serviços</a></li>
-            <li><a href="contato.html" class="link-menu">Contato</a></li>
-        </ul>
-    </nav>
-
-    <!-- Bloco 3: Botão de Ação -->
-    <a href="#contato" class="bnt-header">Fale Conosco</a>
-</header>
-
-<main>
-
-    <section class="video-conteiner">
-            <video autoplay loop muted playsinline class="video-fundo">
-            <source src="../videos/video-editado.mp4" type="video/mp4">
-            seu navegador não suporta vídeos
-    </video>
-
-    <div class="textos-animados">
-    <h2 class="titulo-Animado">Olá somos a ViralWave</h2>
-
-    <h3 class="subtitulo-Animado">A empresa que vai impulsinar o seu negócio na internet</h3>
-
-    <p class="texto-animado">Criamos estratégias de marketing inovadoras para destacar a sua empresa e atrair clientes de verdade para o seu negócio</p>
-
-    <p class="texto-animado2"> Venha fazer parte da evolução do seu projeto</p>
-
-    <h4 class="final-animado"> ViralWave, levando seu negócio ao mundo.</h4>
-
-    </div>
-
-    </section>
-
-    <section class="secao-servicos">
-    <div class="cabecalho-servicos">
-        <h2>A imagem da sua empresa é tudo, você decide como ela deve ser vista, nós mostramos como</h2>
-        <p>Ajudamos nossos clientes a construírem marcas fortes e desejadas no mercado através de nossos serviços especializados.</p>
-    </div>
-
-    <div class="grid-servicos">
-        <!-- Card 1 -->
-        <div class="card-servico">
-            <h3>Criação de sites</h3>
-            <p>Criação especializada de sites responsivos e de alta performance.</p>
+            <!-- Lado Direito: Links do Menu -->
+            <nav>
+                <ul class="nav-principal">
+                    <li><a href="../pages/index.html">Início</a></li>
+                    <li><a href="../pages/sobre.html">Sobre Nós</a></li>
+                    <li><a href="../pages/servicos.html">Serviços</a></li>
+                    <li><a href="../pages/contato.html">Contato</a></li>
+                </ul>
+            </nav>
         </div>
 
-        <!-- Card 2 -->
-        <div class="card-servico">
-            <h3>Design Gráfico</h3>
-            <p>Os melhores designs de acordo com a identidade da sua empresa.</p>
-        </div>
+        <!-- Divisor de Gradiente/Onda entre Mar e Areia -->
+        <div class="transicao-mar-areia"></div>
+    </header>
 
-        <!-- Card 3 -->
-        <div class="card-servico">
-            <h3>Artes e vídeos para redes sociais</h3>
-            <p>Artes e vídeos estratégicos focados no seu nicho.</p>
-        </div>
+    <main>
 
-        <!-- Card 4 -->
-        <div class="card-servico">
-            <h3>Consultoria em SEO</h3>
-            <p>Os melhores consultores para colocar sua marca no topo das buscas.</p>
-        </div>
+        <!-- 1. INTRODUÇÃO (Texto Curto) -->
+        <section class="inicio">
+            <h2>Levando a onda de visualização ao seu negócio</h2>
+            <p>
+                Somos uma empresa focada em marketing para te ajudar a construir uma marca forte e dedicada, através do nosso serviço de Gestão.
+            </p>
+            <p>Abaixo você pode conferir alguns dos serviços que oferecemos:</p>
+        </section>
 
-        <!-- Card 5 -->
-        <div class="card-servico">
-            <h3>Marketing Digital</h3>
-            <p>As melhores ideias de marketing para acelerar o seu negócio.</p>
-        </div>
+        <!-- 2. NOSSOS SERVIÇOS (Cards de Serviços) -->
+        <section class="servicos">
+            <h2>Serviços Especializados</h2>
 
-        <!-- Card 6 -->
-        <div class="card-servico">
-            <h3>Edição de vídeo</h3>
-            <p>Os melhores editores à sua disposição para conteúdos virais.</p>
-        </div>
-    </div>
-</section>
+            <!-- Container para alinhar os 6 cards em grade no CSS -->
+            <div class="cards-container">
 
-    <section class="secao-apresentacao">
-        <div class="container-apresentacao">
-        <!-- Lado Esquerdo: Imagem -->
-        <div class="bloco-imagem">
-            <img src="../images/Imagem.jpg" alt="Imagem de apresentação ViralWave">
-        </div>
+                <div class="card">
+                    <h3>Edição de Vídeo</h3>
+                    <p>Temos uma equipe especializada para que o seu vídeo seja editado da melhor forma e alcance o melhor rendimento.</p>
+                </div>
 
-        <!-- Lado Direito: Conteúdo de Texto -->
-        <div class="bloco-texto">
-                <h2>A ViralWave</h2>
-                <p>Nascemos com a missão de transformar a sua presença digital e a de marcas que desejam se destacar no mercado. Combinamos criatividade, tecnologia e estratégia de tráfego para gerar conexões verdadeiras e resultados de verdade para o seu negócio.</p>
-                <p>Mais do que criar simplesmente um site ou um logotipo, o objetivo da ViralWave é construir uma identidade forte para o seu negócio, possibilitando que ele cresça com consistência em um mundo digital.</p>
+                <div class="card">
+                    <h3>Marketing Digital</h3>
+                    <p>Temos uma equipe especializada em Marketing Digital para que o seu negócio tenha o melhor alcance para o seu público.</p>
+                </div>
+
+                <div class="card">
+                    <h3>Design Gráfico</h3>
+                    <p>Trabalhamos de acordo com o seu negócio: criamos desde o logotipo até a comunicação completa que deseja passar ao público.</p>
+                </div>
+
+                <div class="card">
+                    <h3>Criação de Sites</h3>
+                    <p>Criamos sites especializados para o seu negócio, garantindo que o seu produto seja visto com excelência no mercado.</p>
+                </div>
+
+                <div class="card">
+                    <h3>Consultoria</h3>
+                    <p>Nossos consultores especializados estão à disposição para dar o melhor feedback sobre o que a sua empresa necessita.</p>
+                </div>
+
+                <div class="card">
+                    <h3>Artes e Vídeos para Redes Sociais</h3>
+                    <p>Especialistas focados na criação de posts e vídeos para plataformas sociais, garantindo a melhor viralização do seu conteúdo.</p>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- 3. QUEM SOMOS NÓS (Texto Explicativo/História) -->
+        <section class="sobre-nos">
+            <h2>Quem somos nós?</h2>
+
+            <p>
+                Há mais de 5 anos no mercado de marketing, nos empenhamos diretamente na criação de resultados que tragam o melhor rendimento e impacto ao nosso cliente.
+            </p>
+
+            <p>
+                Hoje em dia, com o advento das IAs (Inteligências Artificiais), não basta ter somente um site ou uma logo: é preciso ter criatividade e pensamento crítico.
+                E esse é o nosso diferencial! Com uma equipe extremamente especializada e criativa, conseguimos entregar para os nossos clientes um resultado único e objetivo.
+                Estamos aqui para trazer uma onda de visualização à sua empresa.
+            </p>
+        </section>
+
+    </main>
+
+    <footer>
+        <!-- Faixa de transição do tom de areia para o pôr do sol -->
+        <div class="transicao-areia-rodape"></div>
+
+        <div class="footer-container">
+            <!-- Coluna 1: Marca e Direitos -->
+            <div class="direito">
+                <h3>ViralWave</h3>
+                <p>&copy; Todos os direitos reservados</p>
+            </div>
+
+            <!-- Coluna 2: Navegação -->
+            <div class="paginas">
+                <h3>Outras páginas</h3>
+                <ul>
+                    <li><a href="../pages/index.html">Início</a></li>
+                    <li><a href="../pages/sobre.html">Sobre Nós</a></li>
+                    <li><a href="../pages/servicos.html">Serviços</a></li>
+                    <li><a href="../pages/contato.html">Contato</a></li>
+                </ul>
+            </div>
+
+            <!-- Coluna 3: Formulário de Novidades -->
+            <div class="novidades">
+                <h3>Novidades</h3>
+                <p>Fique por dentro das atualizações da nossa empresa</p>
+
+                <form onsubmit="event.preventDefault();">
+                    <div class="campo">
+                        <label for="nome">Seu Nome:</label>
+                        <input type="text" id="nome" name="nome" placeholder="Digite seu nome">
+                    </div>
+
+                    <div class="campo">
+                        <label for="email">Seu E-mail:</label>
+                        <input type="email" id="email" name="email" placeholder="seuemail@exemplo.com">
+                    </div>
+
+                    <button type="button">Inscrever-se</button>
+                </form>
             </div>
         </div>
-    </section>
-
-    <section id="contato" class="secao-cta">
-    <div class="card-cta">
-        <h2>Preparado para elevar o nível de sua marca?</h2>
-        <p>Entre em contato com a nossa equipe e faça parte dessa onda de viralização.</p>
-        <a href="https://www.google.com.br/" target="_blank" class="btn-cta">
-            Falar com a equipe
-        </a>
-    </div>
-</section>
-
-</main>
+    </footer>
 
 
-<footer>
-
-    <div>
-        <h3>ViralWave</h3>
-        <p>Através de nosso serviços vamos fazer a sua empresa alcançar resultados e pessoas.</p>
-    </div>
-
-    <div>
-        <h3> Navegue por nossa página</h3>
-
-            <ul>
-                <li><a href="index.html">Principal</a></li>
-                <li><a href="sobre.html">Sobre</a></li>
-                <li><a href="servicos.html">Serviços</a></li>
-                <li><a href="contato.html">Contato</a></li>
-            </ul>
-    </div>
-
-    <div>
-        <h3>Nossos Serviços</h3>
-
-    </div>
-    
-
-    <div>
-
-        <h3>Novidades</h3>
-        <p> Assine o nosso News e fique por dentro de todas as nossa novidades e dicas de identidade visual, marketing, redes sociais e muito mais!</p>
-
-        <form>
-            <label for="emai">Seu Email: </label>
-            <input type="email" id="email" name="email">
-
-            <label for="nome">Seu Nome: </label>
-            <input type="text" id="nome" name="nome">
-            <button class="btn-enviar" type="submit">Enviar</button>
-        </form>
-    
-    </div>
-</footer>
 
 </body>
 </html>
