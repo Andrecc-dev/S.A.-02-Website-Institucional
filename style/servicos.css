@@ -1,0 +1,203 @@
+/* ==================== ESTILOS DA PÁGINA SERVIÇOS ==================== */
+
+.servicos-main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px 20px 60px 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+/* Tag de Seção */
+.tag-secao {
+    font-weight: bold;
+    color: var(--cor-bordaCard);
+    letter-spacing: 1.5px;
+    font-size: 14px;
+    margin-bottom: 8px;
+}
+
+/* --- HERO DA PÁGINA --- */
+.servicos-hero {
+    text-align: center;
+    background-color: var(--cor-secundaria);
+    border: 2px solid var(--cor-bordaCard);
+    border-radius: 12px;
+    padding: 40px 20px;
+    color: var(--cor-texto-claros);
+}
+
+.servicos-hero .tag-secao {
+    color: var(--cor-texto-claros);
+}
+
+.servicos-hero h2 {
+    font-size: 32px;
+    margin-bottom: 12px;
+}
+
+.servicos-hero p {
+    font-size: 18px;
+    max-width: 700px;
+    margin: 0 auto;
+    line-height: 1.5;
+}
+
+/* --- LISTA DE CARDS DETALHADOS --- */
+.lista-servicos {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.card-servico-detalhado {
+    background-color: var(--cor-card);
+    border: 2px solid var(--cor-bordaCard);
+    border-radius: 12px;
+    padding: 35px 30px;
+    display: flex;
+    gap: 25px;
+    align-items: flex-start;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    scroll-margin-top: 20px; /* Garante margem confortável ao rolar via link da home */
+}
+
+.card-servico-detalhado:hover {
+    transform: translateY(-4px);
+}
+
+.numero-servico {
+    font-size: 26px;
+    font-weight: bold;
+    color: var(--cor-texto-claros);
+    background-color: var(--cor-bordaCard);
+    min-width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    flex-shrink: 0;
+}
+
+.conteudo-servico {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    flex-grow: 1;
+}
+
+.conteudo-servico h3 {
+    font-size: 24px;
+    color: var(--cor-texto-claros);
+}
+
+.conteudo-servico p {
+    font-size: 16px;
+    color: var(--cor-texto-claros);
+    line-height: 1.6;
+}
+
+.beneficios-list {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin: 5px 0 10px 0;
+}
+
+.beneficios-list li {
+    font-size: 15px;
+    color: var(--cor-texto-claros);
+    background-color: var(--cor-bordaCard);
+    padding: 8px 14px;
+    border-radius: 6px;
+}
+
+.beneficios-list li::before {
+    content: "✓ ";
+    font-weight: bold;
+}
+
+.botao-solicitar {
+    align-self: flex-start;
+    padding: 10px 20px;
+    background-color: var(--cor-secundaria);
+    color: var(--cor-texto-claros);
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 6px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.botao-solicitar:hover {
+    background-color: var(--cor-bordaCard);
+    transform: translateY(-2px);
+}
+
+/* --- CTA FINAL --- */
+.servicos-cta {
+    text-align: center;
+    background-color: var(--cor-card);
+    border: 2px solid var(--cor-bordaCard);
+    border-radius: 12px;
+    padding: 40px 20px;
+    color: var(--cor-texto-claros);
+}
+
+.servicos-cta h2 {
+    font-size: 26px;
+    margin-bottom: 10px;
+}
+
+.servicos-cta p {
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.botao-cta {
+    display: inline-block;
+    padding: 12px 28px;
+    background-color: var(--cor-secundaria);
+    color: var(--cor-texto-claros);
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 16px;
+    border-radius: 8px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.botao-cta:hover {
+    background-color: var(--cor-bordaCard);
+    transform: translateY(-2px);
+}
+
+/* ==================== RESPONSIVIDADE DA PÁGINA SERVIÇOS ==================== */
+@media (max-width: 768px) {
+    .card-servico-detalhado {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 25px 20px;
+    }
+
+    .numero-servico {
+        width: 50px;
+        height: 50px;
+        font-size: 20px;
+        min-width: 50px;
+    }
+
+    .servicos-hero h2 {
+        font-size: 24px;
+    }
+
+    .conteudo-servico h3 {
+        font-size: 20px;
+    }
+
+    .botao-solicitar {
+        width: 100%;
+        text-align: center;
+    }
+}
