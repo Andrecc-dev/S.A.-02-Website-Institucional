@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ViralWave | Contato</title>
     <link rel="stylesheet" href="../style/global.css">
+    <link rel="stylesheet" href="../style/contato.css">
 </head>
 <body>
     
@@ -31,8 +32,116 @@
         <div class="transicao-mar-areia"></div>
     </header>
 
-    <main>
-        <!-- Conteúdo específico da página Contato -->
+    <main class="contato-main">
+
+        <!-- CABEÇALHO DA PÁGINA -->
+        <section class="contato-hero">
+            <p class="tag-secao">FALE CONOSCO</p>
+            <h2>Vamos Impulsionar o Seu Negócio?</h2>
+            <p>Preencha o formulário abaixo ou utilize um dos nossos canais diretos para solicitar um orçamento sem compromisso.</p>
+        </section>
+
+        <!-- CONTAINER DE CONTATO (FORMULÁRIO + INFORMAÇÕES) -->
+        <div class="contato-grid">
+
+            <!-- COLUNA 1: FORMULÁRIO DE CONTATO -->
+            <section class="card-formulario">
+                <h3>Envie uma Mensagem</h3>
+                <form onsubmit="event.preventDefault();">
+                    
+                    <div class="campo-form">
+                        <label for="nome-contato">Seu Nome Completo:</label>
+                        <input type="text" id="nome-contato" name="nome" placeholder="Ex: João Silva" required>
+                    </div>
+
+                    <div class="campo-form">
+                        <label for="email-contato">Seu E-mail:</label>
+                        <input type="email" id="email-contato" name="email" placeholder="seuemail@exemplo.com" required>
+                    </div>
+
+                    <div class="campo-form">
+                        <label for="telefone">WhatsApp / Telefone:</label>
+                        <input type="tel" id="telefone" name="telefone" placeholder="(00) 90000-0000">
+                    </div>
+
+                    <div class="campo-form">
+                        <label for="servico-interesse">Serviço de Interesse:</label>
+                        <select id="servico-interesse" name="servico">
+                            <option value="">Selecione uma opção...</option>
+                            <option value="video">Edição de Vídeo</option>
+                            <option value="marketing">Marketing Digital & Tráfego</option>
+                            <option value="design">Design Gráfico & Logo</option>
+                            <option value="site">Criação de Site / Landing Page</option>
+                            <option value="consultoria">Consultoria Estratégica</option>
+                            <option value="redes">Gestão de Redes Sociais</option>
+                        </select>
+                    </div>
+
+                    <div class="campo-form">
+                        <label for="mensagem">Detalhes do Projeto:</label>
+                        <textarea id="mensagem" name="mensagem" rows="5" placeholder="Conte um pouco sobre o seu negócio e o que você precisa..."></textarea>
+                    </div>
+
+                    <button type="button" class="btn-enviar-contato">Enviar Mensagem</button>
+
+                </form>
+            </section>
+
+            <!-- COLUNA 2: INFO + TABELA DE ATENDIMENTO -->
+            <section class="card-info">
+                <h3>Canais de Atendimento</h3>
+                <p class="desc-info">Nossa equipe responde em até 2 horas úteis dentro do horário comercial.</p>
+
+                <div class="dados-diretos">
+                    <div class="item-dados">
+                        <strong>📍 Localização:</strong>
+                        <span>Av. Digital das Ondas, 1000 - Vitória/ES</span>
+                    </div>
+                    <div class="item-dados">
+                        <strong>📱 WhatsApp:</strong>
+                        <span>(27) 99999-8888</span>
+                    </div>
+                    <div class="item-dados">
+                        <strong>✉️ E-mail Direto:</strong>
+                        <span>contato@viralwave.com.br</span>
+                    </div>
+                </div>
+
+                <!-- TABELA DE ATENDIMENTO -->
+                <div class="tabela-container">
+                    <h4>Horários e Prazos</h4>
+                    <table class="tabela-atendimento">
+                        <thead>
+                            <tr>
+                                <th>Dia / Canal</th>
+                                <th>Horário</th>
+                                <th>Tempo Médio</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Segunda a Sexta</td>
+                                <td>08h às 18h</td>
+                                <td>Até 2h</td>
+                            </tr>
+                            <tr>
+                                <td>Sábados</td>
+                                <td>09h às 13h</td>
+                                <td>Até 4h</td>
+                            </tr>
+                            <tr>
+                                <td>WhatsApp Direct</td>
+                                <td>Comercial</td>
+                                <td>Imediato</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+            </section>
+
+        </div>
+
     </main>
 
     <footer>

@@ -1,0 +1,223 @@
+/* ==================== ESTILOS DA PÁGINA CONTATO ==================== */
+
+.contato-main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px 20px 60px 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+/* Tag de Seção */
+.tag-secao {
+    font-weight: bold;
+    color: var(--cor-bordaCard);
+    letter-spacing: 1.5px;
+    font-size: 14px;
+    margin-bottom: 8px;
+}
+
+/* --- HERO DA PÁGINA --- */
+.contato-hero {
+    text-align: center;
+    background-color: var(--cor-secundaria);
+    border: 2px solid var(--cor-bordaCard);
+    border-radius: 12px;
+    padding: 40px 20px;
+    color: var(--cor-texto-claros);
+}
+
+.contato-hero .tag-secao {
+    color: var(--cor-texto-claros);
+}
+
+.contato-hero h2 {
+    font-size: 32px;
+    margin-bottom: 12px;
+}
+
+.contato-hero p {
+    font-size: 17px;
+    max-width: 700px;
+    margin: 0 auto;
+    line-height: 1.5;
+}
+
+/* --- GRID DE CONTATO (FORM + INFO) --- */
+.contato-grid {
+    display: grid;
+    grid-template-columns: 1.2fr 1fr;
+    gap: 30px;
+    align-items: start;
+}
+
+/* Card 1: Formulário */
+.card-formulario {
+    background-color: var(--cor-card);
+    border: 2px solid var(--cor-bordaCard);
+    border-radius: 12px;
+    padding: 35px 30px;
+    color: var(--cor-texto-claros);
+}
+
+.card-formulario h3 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.card-formulario form {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.campo-form {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.campo-form label {
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.campo-form input,
+.campo-form select,
+.campo-form textarea {
+    padding: 10px 12px;
+    border: none;
+    border-radius: 6px;
+    outline: none;
+    font-family: inherit;
+    font-size: 14px;
+    background-color: var(--cor-texto-claros);
+    color: var(--cor-texto-principal);
+}
+
+.campo-form textarea {
+    resize: vertical;
+}
+
+.btn-enviar-contato {
+    margin-top: 10px;
+    padding: 12px 20px;
+    background-color: var(--cor-secundaria);
+    color: var(--cor-texto-claros);
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.btn-enviar-contato:hover {
+    background-color: var(--cor-bordaCard);
+    transform: translateY(-2px);
+}
+
+/* Card 2: Informações e Tabela */
+.card-info {
+    background-color: var(--cor-secundaria);
+    border: 2px solid var(--cor-bordaCard);
+    border-radius: 12px;
+    padding: 35px 30px;
+    color: var(--cor-texto-claros);
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.card-info h3 {
+    font-size: 24px;
+}
+
+.desc-info {
+    font-size: 15px;
+    line-height: 1.4;
+}
+
+.dados-diretos {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    background-color: var(--cor-bordaCard);
+    padding: 18px;
+    border-radius: 8px;
+}
+
+.item-dados {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    font-size: 14px;
+}
+
+/* TABELA DE ATENDIMENTO */
+.tabela-container {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.tabela-container h4 {
+    font-size: 18px;
+}
+
+.tabela-atendimento {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: var(--cor-card);
+    border-radius: 8px;
+    overflow: hidden;
+    font-size: 14px;
+}
+
+.tabela-atendimento th,
+.tabela-atendimento td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid var(--cor-bordaCard);
+}
+
+.tabela-atendimento th {
+    background-color: var(--cor-bordaCard);
+    color: var(--cor-texto-claros);
+    font-weight: bold;
+}
+
+.tabela-atendimento tr:last-child td {
+    border-bottom: none;
+}
+
+/* ==================== RESPONSIVIDADE DA PÁGINA CONTATO ==================== */
+@media (max-width: 900px) {
+    .contato-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 600px) {
+    .contato-main {
+        padding-top: 20px;
+        gap: 25px;
+    }
+
+    .card-formulario,
+    .card-info {
+        padding: 25px 18px;
+    }
+
+    .contato-hero h2 {
+        font-size: 24px;
+    }
+
+    .tabela-atendimento th,
+    .tabela-atendimento td {
+        padding: 8px 6px;
+        font-size: 12px;
+    }
+}
