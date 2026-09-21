@@ -1,0 +1,201 @@
+/* ==================== ESTILOS DA PÁGINA INICIAL (INDEX) ==================== */
+
+/* --- SEÇÃO INÍCIO (HERO) --- */
+.inicio {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.inicio-conteudo {
+    max-width: 800px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+}
+
+.texto-destaque {
+    font-weight: bold;
+    letter-spacing: 2px;
+    color: var(--cor-bordaCard);
+    font-size: 14px;
+}
+
+.inicio-conteudo h2 {
+    font-size: 32px;
+    color: var(--cor-texto-principal);
+    line-height: 1.2;
+}
+
+.inicio-conteudo p {
+    font-size: 18px;
+    color: var(--cor-texto-suave);
+}
+
+.botao-inicio {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 12px 24px;
+    background-color: var(--cor-secundaria);
+    color: var(--cor-texto-claros);
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+}
+
+.botao-inicio:hover {
+    background-color: var(--cor-bordaCard);
+    transform: translateY(-3px);
+}
+
+/* --- SEÇÃO SERVIÇOS (2 LINHAS X 3 CARDS) --- */
+.servicos {
+    padding: 60px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.titulo-secao {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.titulo-secao p {
+    font-weight: bold;
+    color: var(--cor-bordaCard);
+    letter-spacing: 1.5px;
+    font-size: 14px;
+}
+
+.titulo-secao h2 {
+    font-size: 28px;
+    color: var(--cor-texto-principal);
+}
+
+/* Grid configurado para 3 colunas (2 linhas com 6 cards no total) */
+.cards-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.card {
+    background-color: var(--cor-card);
+    border: 2px solid var(--cor-bordaCard);
+    border-radius: 12px;
+    padding: 30px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.numero-card {
+    font-size: 24px;
+    font-weight: bold;
+    color: var(--cor-texto-claros);
+    background-color: var(--cor-bordaCard);
+    width: 45px;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    margin-bottom: 15px;
+}
+
+.card h3 {
+    font-size: 20px;
+    color: var(--cor-texto-claros);
+    margin-bottom: 12px;
+}
+
+.card p {
+    font-size: 15px;
+    color: var(--cor-texto-claros);
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+
+.card a {
+    color: var(--cor-texto-claros);
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.2s ease;
+}
+
+.card a:hover {
+    color: var(--cor-secundaria);
+}
+
+/* --- SEÇÃO SOBRE NÓS (CARD DESTACADO) --- */
+.sobre-nos {
+    padding: 60px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.card-sobre {
+    background-color: var(--cor-secundaria);
+    border: 3px solid var(--cor-bordaCard);
+    border-radius: 16px;
+    padding: 40px 30px;
+}
+
+.sobre-titulo {
+    margin-bottom: 20px;
+}
+
+.sobre-titulo p {
+    font-weight: bold;
+    color: var(--cor-texto-claros);
+    letter-spacing: 1.5px;
+    font-size: 14px;
+}
+
+.sobre-titulo h2 {
+    font-size: 26px;
+    color: var(--cor-texto-claros);
+}
+
+.sobre-texto p {
+    font-size: 16px;
+    color: var(--cor-texto-claros);
+    line-height: 1.6;
+    margin-bottom: 16px;
+}
+
+.botao-sobre {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: var(--cor-card);
+    color: var(--cor-texto-claros);
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 6px;
+    transition: background-color 0.3s ease;
+}
+
+.botao-sobre:hover {
+    background-color: var(--cor-bordaCard);
+}
+
+/* RESPONSIVIDADE PARA TELAS MENORES */
+@media (max-width: 900px) {
+    .cards-container {
+        grid-template-columns: repeat(2, 1fr); /* 2 colunas em tablets */
+    }
+}
+
+@media (max-width: 600px) {
+    .cards-container {
+        grid-template-columns: 1fr; /* 1 coluna em celulares */
+    }
+}

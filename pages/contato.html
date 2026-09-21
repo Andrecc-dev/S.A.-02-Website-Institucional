@@ -3,41 +3,77 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ViralWavel | Página incial</title>
+    <title>ViralWave | Contato</title>
     <link rel="stylesheet" href="../style/global.css">
 </head>
 <body>
     
-    <header>
-        <img src="../images/ViralWave (1).svg" alt="Logo Sem fundo">
+    <header class="header-principal">
+        <div class="nav-container">
+            <div class="marca-container">
+                <img src="../images/ViralWave (1).svg" alt="Logo ViralWave" class="logo-img">
+                <div class="titulos-marca">
+                    <h1>ViralWave</h1>
+                    <h2>Levando o seu negócio ao mundo</h2>
+                </div>
+            </div>
 
-        <h1>ViraLWave</h1>
-        <h2>Levando o seu negócio ao mundo</h2>
+            <nav>
+                <ul class="nav-principal">
+                    <li><a href="../pages/index.html">Início</a></li>
+                    <li><a href="../pages/sobre.html">Sobre Nós</a></li>
+                    <li><a href="../pages/servicos.html">Serviços</a></li>
+                    <li><a href="../pages/contato.html">Contato</a></li>
+                </ul>
+            </nav>
+        </div>
 
-        <nav>
-            <Ul>
-                <li><a href="../pages/index.html">Inicio</a></li>
-                <li><a href="../pages/sobre.html">Sobre Nós</a></li>
-                <li><a href="../pages/servicos.html">Serviços</a></li>
-                <li><a href="../pages/contato.html">Contato</a></li>
-            </Ul>
-        </nav>
-
+        <div class="transicao-mar-areia"></div>
     </header>
 
-
-    
     <main>
-        
+        <!-- Conteúdo específico da página Contato -->
     </main>
 
-
-
     <footer>
+        <div class="transicao-areia-rodape"></div>
 
+        <div class="footer-container">
+            <div class="direito">
+                <h3>ViralWave</h3>
+                <p>&copy; Todos os direitos reservados</p>
+            </div>
+
+            <div class="paginas">
+                <h3>Outras páginas</h3>
+                <ul>
+                    <li><a href="../pages/index.html">Início</a></li>
+                    <li><a href="../pages/sobre.html">Sobre Nós</a></li>
+                    <li><a href="../pages/servicos.html">Serviços</a></li>
+                    <li><a href="../pages/contato.html">Contato</a></li>
+                </ul>
+            </div>
+
+            <div class="novidades">
+                <h3>Novidades</h3>
+                <p>Fique por dentro das atualizações da nossa empresa</p>
+
+                <form onsubmit="event.preventDefault();">
+                    <div class="campo">
+                        <label for="nome">Seu Nome:</label>
+                        <input type="text" id="nome" name="nome" placeholder="Digite seu nome">
+                    </div>
+
+                    <div class="campo">
+                        <label for="email">Seu E-mail:</label>
+                        <input type="email" id="email" name="email" placeholder="seuemail@exemplo.com">
+                    </div>
+
+                    <button type="button">Inscrever-se</button>
+                </form>
+            </div>
+        </div>
     </footer>
-
-
 
 </body>
 </html>

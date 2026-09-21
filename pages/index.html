@@ -3,23 +3,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ViralWavel | Página incial</title>
+    <title>ViralWave | Página inicial</title>
+
     <link rel="stylesheet" href="../style/global.css">
+    <link rel="stylesheet" href="../style/index.css">
 </head>
+
 <body>
-    
+
     <header class="header-principal">
         <div class="nav-container">
-            <!-- Lado Esquerdo: Logo + Marca + Slogan -->
+
             <div class="marca-container">
                 <img src="../images/ViralWave (1).svg" alt="Logo ViralWave" class="logo-img">
+
                 <div class="titulos-marca">
                     <h1>ViralWave</h1>
                     <h2>Levando o seu negócio ao mundo</h2>
                 </div>
             </div>
 
-            <!-- Lado Direito: Links do Menu -->
             <nav>
                 <ul class="nav-principal">
                     <li><a href="../pages/index.html">Início</a></li>
@@ -28,92 +31,135 @@
                     <li><a href="../pages/contato.html">Contato</a></li>
                 </ul>
             </nav>
+        
         </div>
 
-        <!-- Divisor de Gradiente/Onda entre Mar e Areia -->
         <div class="transicao-mar-areia"></div>
     </header>
 
     <main>
 
-        <!-- 1. INTRODUÇÃO (Texto Curto) -->
         <section class="inicio">
-            <h2>Levando a onda de visualização ao seu negócio</h2>
-            <p>
-                Somos uma empresa focada em marketing para te ajudar a construir uma marca forte e dedicada, através do nosso serviço de Gestão.
-            </p>
-            <p>Abaixo você pode conferir alguns dos serviços que oferecemos:</p>
+            <div class="inicio-conteudo">
+                <p class="texto-destaque">MARKETING • CRIATIVIDADE • RESULTADOS</p>
+
+                <h2>Levando a onda de visualização ao seu negócio</h2>
+
+                <p>
+                    Somos uma empresa focada em marketing para te ajudar a construir uma marca forte e dedicada, através do nosso serviço de Gestão.
+                </p>
+
+                <p>
+                    Abaixo você pode conferir alguns dos serviços que oferecemos:
+                </p>
+
+                <a href="#servicos" class="botao-inicio">Conheça nossos serviços</a>
+            </div>
         </section>
 
-        <!-- 2. NOSSOS SERVIÇOS (Cards de Serviços) -->
-        <section class="servicos">
-            <h2>Serviços Especializados</h2>
+        <!-- Seção de Serviços em Grid (2 linhas de 3 cards) -->
+        <section class="servicos" id="servicos">
+            <div class="titulo-secao">
+                <p>O QUE FAZEMOS</p>
+                <h2>Serviços Especializados</h2>
+            </div>
 
-            <!-- Container para alinhar os 6 cards em grade no CSS -->
             <div class="cards-container">
 
                 <div class="card">
+                    <div class="numero-card">01</div>
                     <h3>Edição de Vídeo</h3>
-                    <p>Temos uma equipe especializada para que o seu vídeo seja editado da melhor forma e alcance o melhor rendimento.</p>
+                    <p>
+                        Temos uma equipe especializada para que o seu vídeo seja editado da melhor forma e alcance o melhor rendimento.
+                    </p>
+                    <a href="../pages/servicos.html">Saiba mais →</a>
                 </div>
 
                 <div class="card">
+                    <div class="numero-card">02</div>
                     <h3>Marketing Digital</h3>
-                    <p>Temos uma equipe especializada em Marketing Digital para que o seu negócio tenha o melhor alcance para o seu público.</p>
+                    <p>
+                        Temos uma equipe especializada em Marketing Digital para que o seu negócio tenha o melhor alcance para o seu público.
+                    </p>
+                    <a href="../pages/servicos.html">Saiba mais →</a>
                 </div>
 
                 <div class="card">
+                    <div class="numero-card">03</div>
                     <h3>Design Gráfico</h3>
-                    <p>Trabalhamos de acordo com o seu negócio: criamos desde o logotipo até a comunicação completa que deseja passar ao público.</p>
+                    <p>
+                        Trabalhamos de acordo com o seu negócio: criamos desde o logotipo até a comunicação completa que deseja passar ao público.
+                    </p>
+                    <a href="../pages/servicos.html">Saiba mais →</a>
                 </div>
 
                 <div class="card">
+                    <div class="numero-card">04</div>
                     <h3>Criação de Sites</h3>
-                    <p>Criamos sites especializados para o seu negócio, garantindo que o seu produto seja visto com excelência no mercado.</p>
+                    <p>
+                        Criamos sites especializados para o seu negócio, garantindo que o seu produto seja visto com excelência no mercado.
+                    </p>
+                    <a href="../pages/servicos.html">Saiba mais →</a>
                 </div>
 
                 <div class="card">
+                    <div class="numero-card">05</div>
                     <h3>Consultoria</h3>
-                    <p>Nossos consultores especializados estão à disposição para dar o melhor feedback sobre o que a sua empresa necessita.</p>
+                    <p>
+                        Nossos consultores especializados estão à disposição para dar o melhor feedback sobre o que a sua empresa necessita.
+                    </p>
+                    <a href="../pages/servicos.html">Saiba mais →</a>
                 </div>
 
                 <div class="card">
+                    <div class="numero-card">06</div>
                     <h3>Artes e Vídeos para Redes Sociais</h3>
-                    <p>Especialistas focados na criação de posts e vídeos para plataformas sociais, garantindo a melhor viralização do seu conteúdo.</p>
+                    <p>
+                        Especialistas focados na criação de posts e vídeos para plataformas sociais, garantindo a melhor viralização do seu conteúdo.
+                    </p>
+                    <a href="../pages/servicos.html">Saiba mais →</a>
                 </div>
 
             </div>
         </section>
 
-        <!-- 3. QUEM SOMOS NÓS (Texto Explicativo/História) -->
+        <!-- Seção Sobre Nós formatada como Card -->
         <section class="sobre-nos">
-            <h2>Quem somos nós?</h2>
+            <div class="card-sobre">
+                <div class="sobre-titulo">
+                    <p>QUEM SOMOS</p>
+                    <h2>Uma equipe pronta para colocar sua marca em movimento.</h2>
+                </div>
 
-            <p>
-                Há mais de 5 anos no mercado de marketing, nos empenhamos diretamente na criação de resultados que tragam o melhor rendimento e impacto ao nosso cliente.
-            </p>
+                <div class="sobre-texto">
+                    <p>
+                        Há mais de 5 anos no mercado de marketing, nos empenhamos diretamente na criação de resultados que tragam o melhor rendimento e impacto ao nosso cliente.
+                    </p>
 
-            <p>
-                Hoje em dia, com o advento das IAs (Inteligências Artificiais), não basta ter somente um site ou uma logo: é preciso ter criatividade e pensamento crítico.
-                E esse é o nosso diferencial! Com uma equipe extremamente especializada e criativa, conseguimos entregar para os nossos clientes um resultado único e objetivo.
-                Estamos aqui para trazer uma onda de visualização à sua empresa.
-            </p>
+                    <p>
+                        Hoje em dia, com o advento das IAs (Inteligências Artificiais), não basta ter somente um site ou uma logo: é preciso ter criatividade e pensamento crítico.
+                        E esse é o nosso diferencial! Com uma equipe extremamente especializada e criativa, conseguimos entregar para os nossos clientes um resultado único e objetivo.
+                        Estamos aqui para trazer uma onda de visualização à sua empresa.
+                    </p>
+
+                    <a href="../pages/sobre.html" class="botao-sobre">Conheça a ViralWave</a>
+                </div>
+            </div>
         </section>
 
     </main>
 
     <footer>
-        <!-- Faixa de transição do tom de areia para o pôr do sol -->
         <div class="transicao-areia-rodape"></div>
 
         <div class="footer-container">
-            <!-- Coluna 1: Marca e Direitos -->
+
             <div class="direito">
                 <h3>ViralWave</h3>
+                <p>Levando o seu negócio ao mundo</p>
                 <p>&copy; Todos os direitos reservados</p>
             </div>
 
-            <!-- Coluna 2: Navegação -->
             <div class="paginas">
                 <h3>Outras páginas</h3>
                 <ul>
@@ -124,7 +170,6 @@
                 </ul>
             </div>
 
-            <!-- Coluna 3: Formulário de Novidades -->
             <div class="novidades">
                 <h3>Novidades</h3>
                 <p>Fique por dentro das atualizações da nossa empresa</p>
@@ -140,13 +185,12 @@
                         <input type="email" id="email" name="email" placeholder="seuemail@exemplo.com">
                     </div>
 
-                    <button type="button">Inscrever-se</button>
+                    <button type="submit">Inscrever-se</button>
                 </form>
             </div>
+
         </div>
     </footer>
-
-
 
 </body>
 </html>
