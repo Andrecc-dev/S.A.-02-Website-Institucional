@@ -27,7 +27,7 @@ body {
     color: var(--cor-texto-principal);
 }
 
-/* ==================== NAVBAR / HEADER ==================== */
+
 header.header-principal,
 header.principal {
     background-color: var(--cor-navbar);
@@ -96,15 +96,14 @@ nav {
     transform: translateY(-2px);
 } 
 
-/* Transição: Navbar (Azul) -> Main (Areia/Principal) */
+
 .transicao-mar-areia {
     width: 100%;
     height: 45px; 
     background: linear-gradient(to bottom, var(--cor-navbar), var(--cor-principal)); 
 }
 
-/* ==================== FOOTER ==================== */
-/* Transição: Main (Areia/Principal) -> Footer (Pôr do Sol/Rodapé) */
+
 .transicao-areia-rodape {
     width: 100%;
     height: 45px;
@@ -190,4 +189,43 @@ footer {
 
 .novidades button:hover {
     background-color: var(--cor-bordaCard);
+}
+
+/* ==================== RESPONSIVIDADE GLOBAL ==================== */
+@media (max-width: 768px) {
+
+    .nav-container {
+        flex-direction: column;
+        height: auto;
+        padding: 15px;
+        gap: 15px;
+    }
+
+    nav {
+        position: static;
+        transform: none;
+    }
+
+    .nav-principal {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+    }
+
+    .nav-principal a {
+        font-size: 15px;
+        padding: 6px 10px;
+    }
+
+    /* Ajusta as colunas do footer */
+    .footer-container {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .novidades form {
+        width: 100%;
+        max-width: 300px;
+    }
 }
